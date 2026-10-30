@@ -1,0 +1,8 @@
+{
+  "name": "FraudGuard NCB - Quản trị Rủi ro & Gian lận",
+  "description": "Hệ thống giám sát giao dịch, phát hiện và phòng chống gian lận ngân hàng số NCB với 25 kịch bản rủi ro, quy trình Maker-Checker và Audit Log bất biến.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

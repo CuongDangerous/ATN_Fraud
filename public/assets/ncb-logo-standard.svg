@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="100%">
+  <defs>
+    <!-- Red Gradient for Top Swirl -->
+    <linearGradient id="ncb-red-gradient" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stopColor="#EB2229" />
+      <stop offset="60%" stopColor="#DA1F26" />
+      <stop offset="100%" stopColor="#B3161C" />
+    </linearGradient>
+
+    <!-- Blue Gradient for Bottom Swirl -->
+    <linearGradient id="ncb-blue-gradient" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stopColor="#1558A6" />
+      <stop offset="60%" stopColor="#0B4687" />
+      <stop offset="100%" stopColor="#073366" />
+    </linearGradient>
+
+    <!-- Pedestal Base Gradient -->
+    <linearGradient id="ncb-base-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#023B73" />
+      <stop offset="50%" stopColor="#06529C" />
+      <stop offset="100%" stopColor="#023B73" />
+    </linearGradient>
+
+    <!-- Pedestal Specular / Reflection -->
+    <linearGradient id="ncb-specular" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stopColor="#004D8C" stop-opacity="0" />
+      <stop offset="70%" stopColor="#9ABDEB" stop-opacity="0.8" />
+      <stop offset="100%" stopColor="#FFFFFF" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== 1. EMBLEM ==================== -->
+  <g id="ncb-emblem">
+    <!-- Pedestal / Base underneath globe -->
+    <ellipse cx="90" cy="158" rx="84" ry="15" fill="url(#ncb-base-gradient)" />
+    <!-- Light reflection surface on pedestal -->
+    <ellipse cx="90" cy="152" rx="58" ry="7" fill="url(#ncb-specular)" />
+    <rect x="36" y="154" width="108" height="3.5" rx="1.75" fill="#FFFFFF" opacity="0.95" />
+
+    <!-- Circular Globe Yin-Yang -->
+    <g id="ncb-globe">
+      <!-- Blue Bottom-Right Swirl (Yang) -->
+      <path
+        d="M 90 17 
+           C 122 17 148 43 148 75 
+           C 148 107 122 133 90 133 
+           C 65 133 46 117 40 95
+           C 50 115 72 120 90 112
+           C 110 104 116 86 102 75
+           C 88 64 88 45 90 17 Z"
+        fill="url(#ncb-blue-gradient)"
+      />
+
+      <!-- Red Top-Left Swirl (Yin) -->
+      <path
+        d="M 90 17 
+           C 58 17 32 43 32 75 
+           C 32 107 58 133 90 133 
+           C 115 133 134 117 140 95
+           C 130 115 108 120 90 112
+           C 70 104 64 86 78 75
+           C 92 64 92 45 90 17 Z"
+        fill="url(#ncb-red-gradient)"
+      />
+
+      <!-- Central overlapping curve connection -->
+      <path
+        d="M 90 17 
+           C 118 20 148 45 148 75 
+           C 148 95 138 112 122 122
+           C 108 108 108 92 118 78
+           C 126 68 118 42 90 17 Z"
+        fill="url(#ncb-red-gradient)"
+      />
+      <path
+        d="M 90 133 
+           C 62 130 32 105 32 75 
+           C 32 55 42 38 58 28
+           C 72 42 72 58 62 72
+           C 54 82 62 108 90 133 Z"
+        fill="url(#ncb-blue-gradient)"
+      />
+
+      <!-- Central Pure White Diamond -->
+      <polygon
+        points="90,54 111,75 90,96 69,75"
+        fill="#FFFFFF"
+      />
+    </g>
+  </g>
+
+  <!-- ==================== 2. LETTERS "NCB" ==================== -->
+  <g id="ncb-letters" fill="#E02127" fill-rule="evenodd">
+    <!-- Letter N -->
+    <path
+      d="M 195 145 
+         L 195 58 
+         Q 195 35 218 35 
+         L 235 35 
+         L 275 110 
+         L 275 35 
+         L 297 35 
+         L 297 122 
+         Q 297 145 274 145 
+         L 257 145 
+         L 217 70 
+         L 217 145 
+         Z"
+    />
+
+    <!-- Letter C -->
+    <path
+      d="M 405 35 
+         L 333 35 
+         Q 305 35 305 63 
+         L 305 117 
+         Q 305 145 333 145 
+         L 405 145 
+         L 405 123 
+         L 338 123 
+         Q 327 123 327 112 
+         L 327 68 
+         Q 327 57 338 57 
+         L 405 57 
+         Z"
+    />
+
+    <!-- Letter B with 2 inner cutouts punched via evenodd -->
+    <path
+      d="M 420 35 
+         L 492 35 
+         Q 520 35 520 58 
+         L 520 68 
+         Q 520 84 498 84 
+         L 485 84 
+         L 498 96 
+         Q 520 96 520 112 
+         L 520 122 
+         Q 520 145 492 145 
+         L 420 145 
+         L 420 35 
+         Z
+         M 442 55 
+         L 488 55 
+         Q 498 55 498 64 
+         Q 498 73 488 73 
+         L 442 73 
+         Z
+         M 442 107 
+         L 488 107 
+         Q 498 107 498 116 
+         Q 498 125 488 125 
+         L 442 125 
+         Z"
+    />
+  </g>
+</svg>
